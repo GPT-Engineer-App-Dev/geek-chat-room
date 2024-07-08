@@ -9,6 +9,7 @@ import Categories from "./pages/Categories.jsx";
 import About from "./pages/About.jsx";
 import Contact from "./pages/Contact.jsx";
 import Register from "./pages/Register.jsx";
+import CreatePost from "./pages/CreatePost.jsx";
 
 const queryClient = new QueryClient();
 
@@ -53,6 +54,7 @@ const App = () => {
               <Route path="about" element={<About />} />
               <Route path="contact" element={<Contact />} />
               <Route path="register" element={<Register />} />
+              <Route path="create-post" element={<CreatePost />} />
             </Route>
           </Routes>
         </Router>

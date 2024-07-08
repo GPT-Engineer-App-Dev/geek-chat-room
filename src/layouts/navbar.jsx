@@ -9,8 +9,9 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
-import { CircleUser, Menu, Package2, Home, List, Info, Mail, UserPlus } from "lucide-react";
+import { CircleUser, Menu, Package2, Home, List, Info, Mail, UserPlus, PlusCircle } from "lucide-react";
 import { NavLink, Outlet } from "react-router-dom";
+
 const navItems = [
   {
     title: "Home",
@@ -36,6 +37,11 @@ const navItems = [
     title: "Register",
     to: "/register",
     icon: <UserPlus className="h-4 w-4" />,
+  },
+  {
+    title: "Create Post",
+    to: "/create-post",
+    icon: <PlusCircle className="h-4 w-4" />,
   },
 ];
 
